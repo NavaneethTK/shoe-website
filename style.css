@@ -26,15 +26,10 @@ h2 {
   font-size: 22px;
 }
 
-.free {
-  color: rgb(160, 156, 156);
-  text-transform: uppercase;
-  font-size: 14px;
-  margin-bottom: 10px;
-}
 ul {
   list-style-type: square;
   margin-left: 25px;
+  font-size: 25px;
 }
 li {
   margin-bottom: 10px;
@@ -49,21 +44,19 @@ li {
   width: 100%;
   height: 100%;
   border-top: 3px solid black;
-  padding: 10px;
+  padding: 15px;
 }
 .addbtn:hover {
   background-color: white;
   color: black;
 }
-p {
-  margin-bottom: 10px;
-}
 h3 {
   margin: 10px 0;
+  font-size: 30px;
 }
 .container-main {
   border: black 3px solid;
-  width: 700px;
+  width: 990px;
   margin: 400px;
   margin: auto;
   margin-top: 30px;
@@ -75,9 +68,9 @@ h2::before {
   font-weight: bold;
   padding: 5px;
   font-family: "Courier New", Courier, monospace;
-  position: absolute;
-  top: 20px;
-  left: 270px;
+  position: relative;
+  bottom: 30px;
+  right: 180px;
 }
 
 /* .black {
@@ -85,35 +78,86 @@ h2::before {
   height: 50%;
   width: 50%;
   position: relative;
-} */
+  } */
 .black {
   background-color: black;
-  height: 20px;
-  width: 20px;
+  margin-left: 0;
+  height: 25px;
+  width: 25px;
 }
 .blue {
   background-color: blue;
-  height: 20px;
-  width: 20px;
+
+  height: 25px;
+  width: 25px;
 }
 .red {
   background-color: red;
-  height: 20px;
-  width: 20px;
+  height: 25px;
+  width: 25px;
 }
 .yellow {
   background-color: yellow;
-  height: 20px;
-  width: 20px;
+  height: 25px;
+  width: 25px;
 }
 .green {
   background-color: green;
-  height: 20px;
-  width: 20px;
+  height: 25px;
+  width: 25px;
 }
 .box {
   position: relative;
   display: inline-block;
-  margin-left: 10px;
+  margin-left: 5px;
   margin-top: 10px;
+}
+section {
+  float: left;
+  width: 300px;
+  margin-right: 30px;
+}
+article {
+  float: left;
+  width: 300px;
+  margin-top: 20px;
+  margin-right: 30px;
+}
+aside {
+  float: right;
+  width: 300px;
+  margin-top: 20px;
+  margin-right: 30px;
+}
+/* img {
+  margin-right: 50px;
+  } */
+
+.free {
+  color: rgb(160, 156, 156);
+  text-transform: uppercase;
+  font-size: 19px;
+  margin-bottom: 10px;
+  float: right;
+  margin-top: 10px;
+  font-weight: bolder;
+}
+.price {
+  float: left;
+  margin-bottom: 0;
+  font-size: 35px;
+}
+.content {
+  clear: none;
+  margin-top: 50px;
+  font-size: 22px;
+}
+p {
+  margin-bottom: 20px;
+}
+.link {
+  font-size: 20px;
+}
+.parent {
+  margin-top: 40px;
 }
