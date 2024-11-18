@@ -57,7 +57,7 @@ h3 {
 }
 .container-main {
   border: black 3px solid;
-  width: 900px;
+  width: 950px;
   margin: 400px;
   margin: auto;
   margin-top: 30px;
@@ -109,8 +109,8 @@ h2::before {
 }
 .box {
   position: relative;
-  display: inline-block;
-  margin-left: 5px;
+  /* display: inline-block; */
+  /* margin-left: 5px; */
   margin-top: 10px;
 }
 /* section {
@@ -153,6 +153,7 @@ aside {
   margin-top: 50px;
   font-size: 22px;
 }  */
+/* flex */
 p {
   margin-bottom: 20px;
 }
@@ -162,7 +163,7 @@ p {
 .parent {
   margin-top: 40px;
 }
-.all {
+/* .all {
   display: flex;
 }
 .container {
@@ -176,4 +177,37 @@ aside {
   display: flex;
   justify-content: space-between;
   margin-top: 50px;
+} */
+.parent {
+  display: flex;
+  gap: 20px;
+}
+/*
+.all {
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  column-gap: 20px;
+}
+.price-free {
+  display: grid;
+  grid-template-columns: repeat(2, 200px);
+  margin-top: 10px;
+  align-items: center;
+} */
+.container-main {
+  display: grid;
+  grid-template-columns: 300px 300px 1fr;
+  column-gap: 20px;
+}
+header {
+  grid-column: 1/-1;
+}
+button {
+  grid-column: 1/-1;
+}
+.price-free {
+  display: grid;
+  grid-template-columns: repeat(2, 200px);
+  margin-top: 10px;
+  align-items: center;
 }
